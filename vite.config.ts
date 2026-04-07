@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/ebook-doces-vitor-almendro/',
   server: {
     host: "::",
     port: 8080,
