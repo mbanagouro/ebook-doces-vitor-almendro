@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# LP - Ebook Doces - Vitor Almendro
 
-TODO: Document your project here
+
