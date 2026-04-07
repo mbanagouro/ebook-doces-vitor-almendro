@@ -1,4 +1,4 @@
-import { Zap, Dumbbell, Clock, ShieldCheck, BookOpen, Flame, Star, ChevronDown } from "lucide-react";
+import { Zap, Dumbbell, Clock, ShieldCheck, Flame, Star, ChevronDown } from "lucide-react";
 import ebookCover from "@/assets/ebook-cover.png";
 import fotoVitor from "@/assets/foto-vitor.jpeg";
 import ebookPage2 from "@/assets/ebook-page-2.png";
@@ -193,88 +193,6 @@ const RecipePreview = () => (
   </section>
 );
 
-/* ─── O QUE VOCÊ RECEBE ─── */
-const whatYouGet = [
-  { icon: BookOpen, text: "Receitas exclusivas de doces fitness" },
-  { icon: Flame, text: "Informações nutricionais completas por receita" },
-  { icon: Clock, text: "Modo de preparo rápido e prático" },
-  { icon: Zap, text: "Acesso digital imediato — leia no celular ou tablet" },
-  { icon: ShieldCheck, text: "Desenvolvido por nutricionista esportivo certificado" },
-  { icon: Star, text: "Receitas testadas por milhares de pacientes" },
-];
-
-const WhatYouGet = () => (
-  <section className="py-20 md:py-28">
-    <div className="container mx-auto px-4">
-      <div className="max-w-3xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-6xl mb-4">
-          O QUE VOCÊ <span className="text-gradient">RECEBE</span>
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        {whatYouGet.map((item, i) => (
-          <div key={i} className="flex items-center gap-4 bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-colors">
-            <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-              <item.icon className="text-primary" size={20} />
-            </div>
-            <p className="text-foreground font-medium">{item.text}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-/* ─── DEPOIMENTOS ─── */
-const testimonials = [
-  {
-    name: "Camila R.",
-    text: "Nunca imaginei que ia comer brigadeiro e ainda emagrecer. Minha energia no treino aumentou demais!",
-    role: "Atleta de CrossFit",
-  },
-  {
-    name: "Lucas M.",
-    text: "Receitas práticas e muito gostosas. Parei de sofrer com dieta e meu shape só melhorou.",
-    role: "Personal Trainer",
-  },
-  {
-    name: "Ana Paula S.",
-    text: "Melhor investimento que fiz. As receitas são fáceis e meus filhos amam também!",
-    role: "Mãe e praticante de musculação",
-  },
-];
-
-const Testimonials = () => (
-  <section className="py-20 md:py-28 relative">
-    <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/30 to-background" />
-    <div className="container mx-auto px-4 relative z-10">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-6xl mb-4">
-          QUEM JÁ <span className="text-gradient">EXPERIMENTOU</span>
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {testimonials.map((t, i) => (
-          <div key={i} className="bg-card border border-border rounded-xl p-6 hover:border-primary/30 transition-colors">
-            <div className="flex gap-1 mb-4">
-              {[...Array(5)].map((_, j) => (
-                <Star key={j} size={18} className="text-secondary fill-secondary" />
-              ))}
-            </div>
-            <p className="text-foreground mb-4 italic">"{t.text}"</p>
-            <div>
-              <p className="text-foreground font-bold">{t.name}</p>
-              <p className="text-muted-foreground text-sm">{t.role}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
 /* ─── CTA FINAL ─── */
 const FinalCTA = () => (
   <section className="py-20 md:py-28 relative">
@@ -335,8 +253,6 @@ const Index = () => (
     <ProblemSolution />
     <About />
     <RecipePreview />
-    <WhatYouGet />
-    <Testimonials />
     <FinalCTA />
     <Footer />
   </main>
