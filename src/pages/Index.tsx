@@ -40,7 +40,7 @@ const Hero = () => (
             <span className="text-gradient">RESULTADO.</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 animate-fade-up-delay">
-            Receitas fitness deliciosas que turbiam sua disposição, 
+            Receitas fitness deliciosas que turbinam sua disposição,
             saciam a vontade de doce e mantêm seu corpo em alta performance.
           </p>
           <div className="animate-fade-up-delay-2">
