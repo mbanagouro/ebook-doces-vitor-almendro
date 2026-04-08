@@ -141,9 +141,9 @@ const Hero = () => (
     <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent" />
 
     <div className="container mx-auto px-4 relative z-10 py-20">
-      <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="flex flex-col items-center text-center">
         {/* Copy */}
-        <div className="flex-1 text-center lg:text-left">
+        <div className="max-w-4xl">
           <p className="text-secondary font-semibold text-sm md:text-base tracking-widest uppercase mb-4 animate-fade-up">
             Nutrição Esportiva • Vitor Almendro
           </p>
@@ -153,11 +153,11 @@ const Hero = () => (
             <br />
             ESPORTIVA
           </h1>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 animate-fade-up-delay">
+          <p className="text-muted-foreground text-lg md:text-xl max-w-lg mx-auto mb-8 animate-fade-up-delay">
             15 anos de experiência, associando a nutrição esportiva e a fisiologia,
             para transformar a vida de atletas amadores e profissionais.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up-delay-2">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up-delay-2">
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -175,29 +175,17 @@ const Hero = () => (
             </a>
           </div>
           {/* Stats */}
-          <div className="flex flex-wrap gap-8 justify-center lg:justify-start mt-10 animate-fade-up-delay-2">
+          <div className="flex flex-wrap gap-8 justify-center mt-10 animate-fade-up-delay-2">
             {[
               { value: "15+", label: "Anos de experiência" },
-              { value: "10k+", label: "Pacientes atendidos" },
+              { value: "30k+", label: "Pacientes atendidos" },
               { value: "100%", label: "Foco em resultado" },
             ].map((s) => (
-              <div key={s.label} className="text-center lg:text-left">
+              <div key={s.label} className="text-center">
                 <p className="text-3xl md:text-4xl text-gradient">{s.value}</p>
                 <p className="text-muted-foreground text-xs mt-1">{s.label}</p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Photo */}
-        <div className="flex-1 flex justify-center animate-fade-up-delay">
-          <div className="relative">
-            <div className="absolute -inset-8 bg-primary/20 rounded-full blur-3xl" />
-            <img
-              src={fotoVitor}
-              alt="Vitor Almendro — Consultor de Nutrição Esportiva"
-              className="relative w-72 md:w-96 h-72 md:h-96 object-cover rounded-2xl border-2 border-primary/30 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
-            />
           </div>
         </div>
       </div>
@@ -321,7 +309,7 @@ const About = () => (
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
             Mais de{" "}
-            <strong className="text-foreground">10 mil pacientes atendidos</strong> e
+            <strong className="text-foreground">30 mil pacientes atendidos</strong> e
             especialista em criar estratégias nutricionais que entregam{" "}
             <strong className="text-secondary">resultados reais e duradouros</strong>.
           </p>
@@ -472,9 +460,6 @@ const Footer = () => (
           </a>
         </div>
       </div>
-      <p className="text-center text-xs text-muted-foreground mt-4">
-        Este site não substitui acompanhamento nutricional individualizado. Consulte um profissional de saúde.
-      </p>
     </div>
   </footer>
 );
