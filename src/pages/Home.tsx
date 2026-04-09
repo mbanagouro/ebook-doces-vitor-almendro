@@ -148,7 +148,7 @@ const Hero = () => (
             Vitor Almendro
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl leading-none mb-6 animate-fade-up">
-            NUTRIÇÃO ESPORTIVA{" "}
+            NUTRICIONISTA ESPORTIVO{" "}
             <span className="text-gradient">E FISIOLOGIA</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-lg mx-auto mb-8 animate-fade-up-delay">
