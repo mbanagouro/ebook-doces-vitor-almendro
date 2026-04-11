@@ -265,7 +265,7 @@ const About = () => (
             <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl" />
             <img
               src={fotoVitor}
-              alt="Vitor Almendro — Nutricionista Esportivo"
+              alt="Vitor Almendro — Nutricionista Esportivo e Especialista em Fisiologia"
               className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl border-2 border-primary/30"
             />
           </div>

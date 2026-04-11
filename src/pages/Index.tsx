@@ -30,7 +30,7 @@ const Hero = () => (
         {/* Copy */}
         <div className="flex-1 text-center lg:text-left">
           <p className="text-secondary font-semibold text-sm md:text-base tracking-widest uppercase mb-4 animate-fade-up">
-            Nutricionista Esportivo • Vitor Almendro
+            Nutricionista Esportivo e Especialista em Fisiologia • Vitor Almendro
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl leading-none mb-6 animate-fade-up">
             DOCES QUE DÃO{" "}
@@ -124,7 +124,7 @@ const About = () => (
             <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl" />
             <img
               src={fotoVitor}
-              alt="Vitor Almendro — Nutricionista Esportivo"
+              alt="Vitor Almendro — Nutricionista Esportivo e Especialista em Fisiologia"
               className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl border-2 border-primary/30"
             />
           </div>
