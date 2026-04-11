@@ -68,7 +68,7 @@ const Navbar = () => {
               to="/ebook-doces-saudaveis"
               className="text-sm font-medium text-secondary hover:text-secondary/80 transition-colors duration-200"
             >
-              Ebook
+              Produtos
             </Link>
             <a
               href={WHATSAPP_URL}
@@ -111,7 +111,7 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               className="text-base font-medium text-secondary"
             >
-              Ebook
+              Produtos
             </Link>
             <a
               href={WHATSAPP_URL}
